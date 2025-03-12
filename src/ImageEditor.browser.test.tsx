@@ -2,7 +2,7 @@ import '@vitest/browser/matchers';
 import { render } from 'vitest-browser-react'
 import { MemoryRouter, Route, Routes } from 'react-router-dom';
 import { vi, describe, it, expect, afterEach, beforeEach, Mock } from 'vitest';
-import { page, userEvent } from '@vitest/browser/context'
+import { page, userEvent } from '@vitest/browser/context';
 import { Utils } from './Utils';
 import ImageEditor from './ImageEditor';
 

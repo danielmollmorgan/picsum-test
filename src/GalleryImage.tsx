@@ -3,11 +3,12 @@ import { useNavigate, useParams } from 'react-router-dom';
 function GalleryImage({ image }: { image: GalleryImage }) {
   const { page } = useParams();
   const heightRatio = Math.round((image.height / image.width) * 400); // Maintain aspect ratio
+  const currentPage = Number(page) || 1;
 
   const navigate = useNavigate();
   const handleImageClick = (e: React.MouseEvent<HTMLAnchorElement>, id: number) => {
     e.preventDefault();
-    navigate(`/edit/${id}/${page}`);
+    navigate(`/edit/${id}/${currentPage}`);
   };
 
   return (

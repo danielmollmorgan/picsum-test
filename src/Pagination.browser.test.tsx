@@ -1,3 +1,4 @@
+import '@vitest/browser/matchers';
 import { render } from 'vitest-browser-react';
 import { MemoryRouter, Routes, Route } from 'react-router-dom';
 import { vi, describe, it, expect, afterEach } from 'vitest';
